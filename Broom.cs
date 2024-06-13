@@ -21,10 +21,6 @@ namespace PeakSweeper
             {
                 if (obj.layer == 22 || obj.tag == "Snow")
                 {
-                    if (obj.name == "BivouacPickedUpObject")
-                    {
-                        continue;
-                    }
                     if (obj.name.Contains("Snow") || obj.name.Contains("ShrubberyObstacle"))
                     {
                         MelonLogger.Msg($"Disabled: {obj.name}");
