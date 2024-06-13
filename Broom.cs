@@ -25,7 +25,11 @@ namespace PeakSweeper
                     {
                         continue;
                     }
-                    obj.SetActive(false);
+                    if (obj.name.Contains("Snow") || obj.name.Contains("ShrubberyObstacle"))
+                    {
+                        MelonLogger.Msg($"Disabled: {obj.name}");
+                        obj.SetActive(false);
+                    }
                 }
             }
         }
