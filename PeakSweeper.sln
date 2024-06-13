@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeakSweeper", "PeakSweeper.csproj", "{F7187785-D605-4808-AA5D-D726556C49DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7187785-D605-4808-AA5D-D726556C49DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7187785-D605-4808-AA5D-D726556C49DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7187785-D605-4808-AA5D-D726556C49DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7187785-D605-4808-AA5D-D726556C49DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A551E05C-293F-474D-ABD4-FD7CB11BAAE2}
+	EndGlobalSection
+EndGlobal
