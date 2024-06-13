@@ -17,11 +17,14 @@ namespace PeakSweeper
         private void CleanSweep()
         {
             GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
-
             foreach (GameObject obj in allObjects)
             {
                 if (obj.layer == 22 || obj.tag == "Snow")
                 {
+                    if (obj.name == "BivouacPickedUpObject")
+                    {
+                        continue;
+                    }
                     obj.SetActive(false);
                 }
             }
