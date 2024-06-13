@@ -11,6 +11,7 @@ namespace PeakSweeper
             {
                 return;
             }
+            MelonLogger.Msg($"Scene loaded: {sceneName}");
             CleanSweep();
         }
 
