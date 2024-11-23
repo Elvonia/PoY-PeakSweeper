@@ -1,11 +1,15 @@
-﻿using MelonLoader;
-using PeakSweeper;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
+#if MELONLOADER
+using MelonLoader;
+using PeakSweeper;
+
 [assembly: MelonInfo(typeof(Broom), "Peak Sweeper", "1.3", "Kalico")]
 [assembly: MelonGame("TraipseWare", "Peaks of Yore")]
+
+#endif
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
