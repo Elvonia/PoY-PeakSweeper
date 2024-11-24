@@ -1,13 +1,16 @@
-﻿#if BEPINEX
+﻿using UnityEngine;
+
+#if BEPINEX
 using BepInEx;
 using UnityEngine.SceneManagement;
 
 #elif MELONLOADER
 using MelonLoader;
 
-#endif
+[assembly: MelonInfo(typeof(PeakSweeper.Broom), "Peak Sweeper", PluginInfo.PLUGIN_VERSION, "Kalico")]
+[assembly: MelonGame("TraipseWare", "Peaks of Yore")]
 
-using UnityEngine;
+#endif
 
 namespace PeakSweeper
 {
