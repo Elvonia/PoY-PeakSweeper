@@ -76,6 +76,24 @@ namespace PeakSweeper
                         obj.SetActive(false);
                     }
                 }
+                else if (obj.layer == LayerMask.NameToLayer("BrittleIce"))
+                {
+                    if (obj.transform.parent == null)
+                    {
+                        continue;
+                    }
+
+                    if (obj.transform.parent.name.Contains("BrittleIceContainer_Destroyable") == false
+                        && obj.transform.parent.name.Contains("BrittleIce_Climbable_destroyall") == false)
+                    {
+                        continue;
+                    }
+
+                    if (obj.name.Contains("brittleice_child"))
+                    {
+                        obj.SetActive(false);
+                    }
+                }
             }
         }
     }
