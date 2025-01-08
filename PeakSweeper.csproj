@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <Platform>Any CPU</Platform>
-    <Version>1.4</Version>
+    <Version>1.5</Version>
     <AssemblyName>PeakSweeper</AssemblyName>
     <RootNamespace>PeakSweeper</RootNamespace>
     <Configurations>Debug-BepInEx;Release-BepInEx;Debug-MelonLoader;Release-MelonLoader</Configurations>
