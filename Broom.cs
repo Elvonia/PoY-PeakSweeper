@@ -94,6 +94,18 @@ namespace PeakSweeper
                         obj.SetActive(false);
                     }
                 }
+
+                if (obj.layer == LayerMask.NameToLayer("Dirt"))
+                {
+                    BrickHold brickHold = obj.GetComponent<BrickHold>();
+
+                    if (brickHold == null || brickHold.popoutInstantly == false)
+                    {
+                        continue;
+                    }
+
+                    obj.SetActive(false);
+                }
             }
         }
     }

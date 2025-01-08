@@ -46,6 +46,23 @@
     <PackageReference Include="UnityEngine.Modules" Version="2019.4.36" PrivateAssets="all" />
   </ItemGroup>
 
+  <Import Condition="Exists('GamePath.props')" Project="GamePath.props"/>
+
+  <PropertyGroup Condition="'$(GamePath)' == ''">
+    <GamePath Condition="'$(OS)' == 'Unix'">$(HOME)/.local/share/Steam/steamapps/common/Peaks of Yore</GamePath>
+    <GamePath Condition="'$(OS)' == 'Windows_NT'">C:/Program Files (x86)/Steam/steamapps/common/Peaks of Yore</GamePath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GameLibPath>$(GamePath)/Peaks of Yore_Data/Managed</GameLibPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp.dll">
+      <HintPath>$(GameLibPath)/Assembly-CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
   <ItemGroup Condition="'$(OS)' == 'Unix'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
   </ItemGroup>
